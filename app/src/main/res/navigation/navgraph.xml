@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph"
+    app:startDestination="@id/radioListFragment">
+    <fragment
+        android:id="@+id/radioListFragment"
+        android:name="com.androidavid.streamblaze.RadioListFragment"
+        android:label="fragment_radio_list"
+        tools:layout="@layout/fragment_radio_list" >
+        <action
+            android:id="@+id/action_radioListFragment_to_radioFragment"
+            app:destination="@id/radioFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/radioFragment"
+        android:name="com.androidavid.streamblaze.RadioFragment"
+        android:label="fragment_radio"
+        tools:layout="@layout/fragment_radio" >
+        <action
+            android:id="@+id/action_radioFragment_to_radioListFragment"
+            app:destination="@id/radioListFragment" />
+
+        <argument
+            android:name="stationName"
+            app:argType="string" />
+        <argument
+            android:name="stationUrl"
+            app:argType="string" />
+        <argument
+            android:name="imageUrl"
+            app:argType="string" />
+
+    </fragment>
+</navigation>

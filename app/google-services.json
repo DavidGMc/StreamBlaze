@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "826737170169",
+    "project_id": "streamblaze",
+    "storage_bucket": "streamblaze.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:826737170169:android:d84ade99de295a483e3428",
+        "android_client_info": {
+          "package_name": "com.androidavid.streamblaze"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmRGGHnZLAQ-UBOEIaXMtfSBkIw7b14dM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
